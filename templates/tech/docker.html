@@ -1,0 +1,137 @@
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                <button type="button" class="close close_modal" data-bs-dismiss="modal"
+                    aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <pre class="prettyprint" style="border:0;">
+                </pre>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary close_modal" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popover-content-rename d-none">
+    <form id="rename_form_popover">
+        <div class="row">
+            <div class="col-sm-7 ">
+                <input class="form-control rounded-0 input-sm rename_form_popover_input" type="text"
+                    name="new_container_name" placeholder="new name" autocomplete="off" required>
+            </div>
+            <div class="col-sm-1">
+                <button class="btn btn-primary rename_form_popover_submit" type="submit">Rename</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+<div class="popover-content-commit d-none">
+    <form id="commit_form_popover">
+        <div class="row">
+            <div class="col-sm-7 ">
+                <input class="form-control rounded-0 input-sm commit_form_popover_input" type="text"
+                    name="new_container_name" placeholder="Image:Tag*" autocomplete="off" required>
+            </div>
+            <div class="col-sm-1">
+                <button class="btn btn-primary commit_form_popover_submit" type="submit">Commit</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+<div class="flex flex-column flex-wrap justify-content-center fll">
+    <div class="card rounded-0 border-0 shadow my-3">
+        <div class="card-body p-4">
+            <form class="mb-2" id="add_container">
+                <div class="row">
+                    <div class="col-lg-2 my-1">
+                        <h5>Containers</h5>
+                    </div>
+                    <div class="col-lg-2 my-1">
+                        <input class="form-control rounded-0 input-sm" type="text" name="Container_name"
+                            placeholder="Container name" autocomplete="off" id='cn'>
+                    </div>
+                    <div class="col-lg-2 my-1">
+                        <input class="form-control rounded-0 input-sm" type="text" name="Image_name"
+                            placeholder="Image name : Tag*" required list="imagename" autocomplete="off" id='in'>
+                        <datalist id="imagename">
+                        </datalist>
+                    </div>
+                    <div class="col-lg-2 my-1">
+                        <input class="form-control rounded-0 input-sm" type="number" name="Host_port"
+                            placeholder="Host port" autocomplete="off" max="65535" id="hp">
+                    </div>
+                    <div class="col-lg-2 my-1">
+                        <input class="form-control rounded-0 input-sm" type="number" name="Container_port"
+                            placeholder="Container port" max="65535" id="cp">
+                    </div>
+                    <div class="col-lg-2 my-1">
+                        <button class="btn btn-primary w-100" type="submit" id="Create">Add</button>
+                    </div>
+                </div>
+            </form>
+            <div class="table-responsive" style="overflow-x:scroll;">
+                <table class="table" id="containers_catag">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Container ID</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">State</th>
+                            <th scope="col">Ports</th>
+                            <th scope="col">Inspect</th>
+                            <th scope="col">Commit</th>
+                            <th scope="col">Action</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="card rounded-0 border-0 shadow my-3 mb-5">
+        <div class="card-body p-4">
+            <form class="mb-2" id="pull_image">
+                <div class="row">
+                    <div class="col-lg-2 my-1">
+                        <h5>Images</h5>
+                    </div>
+                    <div class="col-lg-8 my-1">
+                        <input class="form-control rounded-0 input-sm" type="text" name="firstname"
+                            placeholder="Image name : Tag" required autocomplete="off" id="ni">
+                    </div>
+                    <div class="col-lg-2 my-1">
+                        <button class="btn btn-primary w-100" type="submit" id="pull">Pull</button>
+                    </div>
+                </div>
+            </form>
+            <div class="table-responsive" style="overflow-x:scroll;">
+                <table class="table " id="images_catag">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Repository</th>
+                            <th scope="col">Tag</th>
+                            <th scope="col">Image ID</th>
+                            <th scope="col">Created</th>
+                            <th scope="col">Size</th>
+                            <th scope="col">Inspect</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
