@@ -1,0 +1,40 @@
+<!-- <div class="container d-flex justify-content-center align-self-center align-items-center">
+    <h1>Coming soon...</h1>
+</div> -->
+<div class="w-100 kube-container card shadow m-2">
+    <div class="col " id="chatbot-box">
+        <div class="chatmess"></div>
+    </div>
+    <div class="col" id="kube-footer">
+        <form id="kube-form" class="row justify-content-center h-100">
+            <div class="col col-9">
+                <input class="form-control rounded-0 input-sm" style="text-transform:lowercase" type="text" name="kube-mess" placeholder='Type here' required autocomplete="off" id="kube-footer-input">
+            </div>
+            <div class="col col-2 " id="kube-footer-send">
+                <button class="btn btn-outline-primary w-100" type="submit">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor"
+                                d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade modal-p-bottom" id="modalPBottom">
+    <div class="modal-dialog modal-dialog-scrollable" style="max-height: 50vh;">
+        <div class="modal-content" style="overflow: visible;">
+            <span style="position: absolute;right: 0; top: -40px; z-index: 1; ">
+                <button type="button" class="btn " id="full_screen" style="color:#fff; ">Full screen</button>
+                <button type="button" class="btn " data-bs-dismiss="modal" aria-label="Close" style="font-size: x-large;color:#fff;  " data-dismiss="modal">&times;</button>
+            </span>
+            <div class="modal-body">
+                <pre class="prettyprint" style="border:0;"></pre>
+            </div>
+        </div>
+    </div>
+</div>

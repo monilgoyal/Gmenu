@@ -1,0 +1,157 @@
+.kube-container {
+    border-radius: 5px;
+    background: linear-gradient(0, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://www.accurics.com/wp-content/uploads/2020/12/k8s-unfixable_blog-hero_1920x1080px-1.jpg');
+    background-size: cover;
+    background-position-x: center;
+}
+
+#kube-footer {
+    margin-top: 1vh;
+}
+
+#kube-footer-input {
+    background-color: transparent;
+    color: white;
+}
+
+#kube-footer-send {
+    max-width: 100px;
+}
+
+#chatbot-box {
+    /* border:2px solid black; */
+    min-height: 75vh;
+    border-bottom: 1px solid gainsboro;
+    overflow: none;
+    position: relative;
+    padding: 0;
+}
+
+.chatmess {
+    overflow: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-height: 75vh;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.chatmess div.mess_by_server,
+.chatmess div.mess_by_client {
+    overflow: hidden;
+}
+
+.chatmess div span {
+    color: white;
+    max-width: 80%;
+}
+
+.chatmess div span.left_text {
+    border: 1px solid #fff;
+    background-color: #5161ce;
+    border-radius: 5px 15px 8px 15px;
+    float: left;
+}
+
+.chatmess div span.right_text {
+    border-radius: 15px 5px 15px 8px;
+    background-color: #fff;
+    color: #5161ce;
+    float: right;
+}
+
+.floating-label-group {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.floating-label-group .floating-label {
+    font-size: 13px;
+    color: #cccccc;
+    position: absolute;
+    pointer-events: none;
+    top: 9px;
+    left: 12px;
+    transition: all 0.1s ease;
+}
+
+.floating-label-group input:focus~.floating-label,
+.floating-label-group input:not(:focus):valid~.floating-label {
+    top: -18px;
+    bottom: 0px;
+    left: 0px;
+    font-size: 12px;
+    opacity: 1;
+    color: #ffffff;
+}
+
+.config-form input:placeholder-shown {
+    border-left: 5px solid tomato;
+}
+
+.config-form input::placeholder {
+    opacity: 0;
+}
+
+.config-form input:focus::-webkit-input-placeholder {
+    opacity: 1;
+}
+
+
+/* Firefox < 19 */
+
+.config-form input:focus:-moz-placeholder {
+    opacity: 1;
+}
+
+
+/* Firefox > 19 */
+
+input:focus::-moz-placeholder {
+    opacity: 1;
+}
+
+
+/* Internet Explorer 10 */
+
+.config-form input:focus:-ms-input-placeholder {
+    opacity: 1;
+}
+
+.modal-bottom .modal-dialog {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100% !important;
+    margin: 0;
+}
+
+.modal-bottom .modal-dialog .modal-content {
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.modal-p-bottom .modal-dialog {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100% !important;
+    margin: 0;
+    transform: translateY(100%) !important;
+}
+
+.modal-p-bottom .modal-dialog .modal-content {
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.modal-p-bottom.show {
+    overflow: hidden;
+}
+
+.modal-p-bottom.show .modal-dialog {
+    transform: translateY(0%) !important;
+    min-height: 80px;
+}
